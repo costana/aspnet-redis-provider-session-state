@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+ID da Sessão:  @Session.SessionID
+<br />
+ID do Usuário:  @Session["id"]
+<br />
+Nome do Usuário:  @Session["usuario"]
+<br />
+Horário: @DateTime.Now.ToString()
+<br />
+
+<hr />
+
+@using (Html.BeginForm("Register", "RedisSession", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="col-12">
+        <label for="userid" class="form-label">id</label><br>
+        <input type="text" name="userid" id="userid" /><br>
+        <label for="username" class="form-label">Username</label><br>
+        <input type="text" name="username" id="username" /><br><br>
+
+        <input type="submit" value="Enviar" />
+    </div>
+}
