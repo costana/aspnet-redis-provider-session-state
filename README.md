@@ -15,5 +15,4 @@ Após adicinar o pacote o arquivo Web.config será modificado recebendo uma nova
 
 ![image](https://user-images.githubusercontent.com/731481/172261274-c1b5d4e7-0fc0-4b3c-8c29-9721118bc99c.png)
 
-Agora é divertir e testar jovens!
-
+Na sequência execute a aplicação na sua IDE ex Visual Studio ou VsCode e divirta-se jovem
